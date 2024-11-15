@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./libs/d3.js"></script>
+    <title>Author Network Data</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="parameterForm">
+                <label for="linkStrength">Link Strength:</label>
+                <input type="number" id="linkStrength" value="0.1" step="0.01">
+                
+                <label for="collideForce">Collide Force:</label>
+                <input type="number" id="collideForce" value="5" step="1">
+
+                <label for="chargeForce">Charge Force:</label>
+                <input type="number" id="chargeForce" value="-1" step="0.1">
+
+                <label for="nodeSize">Node Size:</label>
+                <input type="radio" name="nodeSize" value="citations" checked> Number of Citations
+                <input type="radio" name="nodeSize" value="degree"> Degree
+                <input type="radio" name="nodeSize" value="publications"> Number of Publications
+                
+                <button type="button" id="applyChanges">Apply Changes</button>
+            </form>
+        </div>
+        <div class="Fig"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

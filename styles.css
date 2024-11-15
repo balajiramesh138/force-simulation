@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container {
+    margin-right: 20px;
+}
+
+circle {
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+line {
+    stroke: #999;
+    stroke-opacity: 0.6;
+}
